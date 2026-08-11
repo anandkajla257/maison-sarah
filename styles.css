@@ -122,3 +122,94 @@ nav {
   display: flex;
   gap: 1rem;
 }
+/* Form styling */
+form {
+  margin-top: 1rem;
+}
+
+/* labels block above inputs */
+label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+/* Field inputs (text/email/select/textarea inputs that use .field) */
+.field {
+  width: min(520px, 100%);
+  display: block;
+  font: inherit;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* Textarea: keep consistent width with .field */
+textarea.field {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Focus: custom outline (restyled) */
+.field:focus {
+  outline: 3px solid rgba(0, 0, 0, 0.35);
+  outline-offset: 2px;
+}
+
+/* Required cue */
+.field:required {
+  border-color: #b5b5b5;
+}
+
+/* Make required feel obvious */
+.field:required:invalid {
+  box-shadow: none;
+}
+
+/* Accent color for checkboxes/radios */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #2f6b4f; /* change to your lesson's accent color if different */
+}
+
+/* Group rows for radios/checkboxes */
+.choice {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+/* Ensure radios/checkbox inputs don't stretch */
+.choice input {
+  flex: 0 0 auto;
+}
+
+/* Radio/checkbox labels should align nicely */
+.choice label {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Submit button */
+button[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  font: inherit;
+  font-weight: 800;
+  border: 0;
+  border-radius: 10px;
+  background: #1f1f1f; /* match your site header/footer color if different */
+  color: #fff;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+button[type="submit"]:focus {
+  outline: 3px solid rgba(0, 0, 0, 0.35);
+  outline-offset: 2px;
+}

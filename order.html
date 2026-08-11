@@ -83,7 +83,120 @@
       <p>We Thank You for the trust you have placed in us and it gives us an immense pleasure to serve you the best quality baked items </p>
       <p><strong>Drop by any feedback at our Bakery to enjoy a flat 10% discount off on all bakery items</strong></p>
       <section>  
-    <section>
+    <form action="order.html" method="get">
+  <fieldset>
+    <legend>Who is picking up</legend>
+
+    <div>
+      <label for="name">Name</label>
+      <input class="field" id="name" name="name" type="text" placeholder="Your name" required>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input class="field" id="email" name="email" type="email" placeholder="you@example.com" required>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Pickup day</legend>
+
+    <div>
+      <input type="radio" id="pickup-sat" name="pickupDay" value="Saturday" checked>
+      <label for="pickup-sat">Saturday</label>
+    </div>
+
+    <div>
+      <input type="radio" id="pickup-sun" name="pickupDay" value="Sunday">
+      <label for="pickup-sun">Sunday</label>
+    </div>
+
+    <div>
+      <label for="pickupTime">Pickup time</label>
+      <select id="pickupTime" name="pickupTime">
+        <option value="11:00am">11:00am</option>
+        <option value="12:00pm">12:00pm</option>
+        <option value="1:00pm">1:00pm</option>
+        <option value="2:00pm">2:00pm</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Your order</legend>
+<h3>Drinks</h3>
+    <div>
+      <input type="checkbox" id="item-espresso" name="order" value="Espresso">
+      <label for="item-espresso">Espresso</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="item-cappucino" name="order" value="Cappucino">
+      <label for="item-cappucino">Cappucino</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="item-latte-machiato" name="order" value="Latte Machiato">
+      <label for="item-latte-machiato">Latte Machiato</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="item-iced-latte" name="order" value="Iced Latte">
+      <label for="item-iced-latte">Iced Latte</label>
+    </div>
+        <div>
+      <label for="notes">Notes</label>
+      <textarea id="notes" name="notes" rows="4"></textarea>
+    </div>
+  </fieldset>
+<fieldset>
+<h3>Pastries</h3>
+<div>
+      <input type="checkbox" id="item-butter-croissant" name="order" value="Butter Croissant">
+      <label for="item-butter-croissant">Butter Croissant</label>
+    </div>
+<div>
+      <input type="checkbox" id="item-nuss-nougat-croissant" name="order" value="Nuss Nougat Croissant">
+      <label for="item-nuss-nougat-croissant">Nuss Nougat Croissant</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="item-blueberry-muffin" name="order" value="Blueberry Muffin">
+      <label for="item-blueberry-muffin">Blueberry Muffin</label>
+    </div>
+ <div>
+      <input type="checkbox" id="item-choco-vanilla-muffin" name="order" value="Choco Vanilla Muffin">
+      <label for="item-choco-vanilla-muffin">Choco Vanilla Muffin</label>
+    </div>
+<div>
+      <input type="checkbox" id="item-nutella-muffin" name="order" value="Nutella Muffin">
+      <label for="item-nutella-muffin">Nutella Muffin</label>
+    </div>
+
+ <div>
+      <label for="notes">Notes</label>
+      <textarea id="notes" name="notes" rows="4"></textarea>
+    </div>
+</fieldset>
+<fieldset>
+<h3>Seasonal</h3>
+<div>
+      <input type="checkbox" id="item-pumpkin-spice-cold-brew" name="order" value="Pumpkin Spice Cold Brew">
+      <label for="item-pumpkin-spice-cold-brew">Pumpkin Spice Cold Brew</label>
+    </div>
+<div>
+      <input type="checkbox" id="item-chocolate-sea-salt-tart" name="order" value="Chocolate Sea Salt Tart">
+      <label for="item-chocolate-sea-salt-tart">Chocolate Sea Salt Tart</label>
+    </div>
+
+    <div>
+      <label for="notes">Notes</label>
+      <textarea id="notes" name="notes" rows="4"></textarea>
+    </div>
+</fieldset>
+<button type="submit">Submit pre-order</button>
+</form>    
+        <section>
         <h2>Find us</h2>
         <p>Alexanderplatz 12, 121077, Berlin, Germany</p>
         <p>
