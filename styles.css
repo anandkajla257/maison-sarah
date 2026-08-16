@@ -1,0 +1,49 @@
+/* At least: a body ruleset with background-color and color */
+body {
+  background-color: #faf5ee;
+  color: #2f2a25;
+}
+
+/* Dark scheme for header and footer (grouped selector) with readable text */
+header,
+footer {
+  background-color: var(--surface-dark);
+  color: var(--surface-dark-text);
+}
+
+/* A grouped color for h1 and h2 */
+h1,
+h2 {
+  color: #8a5a2e;
+  text-align: center;
+}
+
+/* nav links styled through descendant selector nav a with text-decoration: none */
+nav a {
+  color: var(--surface-dark-text);
+  text-decoration: none;
+}
+
+/* Optional: keep hover readable without breaking “Lesson 6 spacing” (not required) */
+nav a:hover {
+  color: var(--nav-hover-accent);
+}
+
+/* Put classes to work: brand + tagline */
+.brand {
+  color: #f0abfc; /* bright pink-violet, readable on dark header/footer */
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.tagline {
+  color: #93c5fd; /* light blue accent, good on body bg */
+  font-weight: 600;
+}
+
+/* If menu has prices in span elements from Lesson 3, add a price class */
+.price {
+  background: transparent;
+  color: var(--price);
+  font-weight: 700;
+}
