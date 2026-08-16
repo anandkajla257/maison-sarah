@@ -4,104 +4,200 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu to Order</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="container header-bar">
-        <div><a href="index.html">Home</a></div>
-        <div><a href="menu.html">Menu</a></div>
-        <div><a href="order.html">Order</a></div>
+          <div><a href="index.html">Home</a></div>
+          <div><a href="menu.html">Menu</a></div>
+          <div><a href="order.html">Order</a></div>
         </div>
       </nav>
     </header>
     <main>
       <h1><span class="brand">Maison Sarah - Menu</span></h1>
       <p class="tagline">
-        Freshly prepared bread, pastries and much more to tickle your sweet tooth- A la Carte and pre-order available
+        Freshly prepared bread, pastries and much more to tickle your sweet
+        tooth- A la Carte and pre-order available
       </p>
       <img
-        src="images/menu-prices.jpg" width="700" height="450"
+        src="images/menu-prices.jpg"
+        width="700"
+        height="450"
         alt="A marble shelf designed with attractive sortiments of colourful pastries with white lighting ready for guests"
       />
       <section>
-        <section>
-      <h2>Drinks</h2>
-      <ol>
-        <li>
-          Espresso <span class="price">$3.50</span>
-        </li>
-        <li>
-          Cappucino <span class="price">$4.50</span>
-        </li>
-        <li>
-          Latte Machiato <span class="price">$5.50</span>
-        </li>
-        <li>
-          Iced Latte <span class="price">$5.50</span>
-        </li>
-      </ol>
-    </section>
+        <h2>Drinks</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Espresso</td>
+              <td><span class="price">$3.50</span></td>
+            </tr>
+            <tr>
+              <td>Cappucino</td>
+              <td><span class="price">$4.50</span></td>
+            </tr>
+            <tr>
+              <td>Latte Machiato</td>
+              <td><span class="price">$5.50</span></td>
+            </tr>
+            <tr>
+              <td>Iced Latte</td>
+              <td><span class="price">$5.50</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <section>
-      <h2>Pastries</h2>
-      <ol>
-        <li>
-          Butter Croissant <span class="price">$3.00</span>
-        </li>
-        <li>
-          Nuss Nougat Croissant <span class="price">$3.50</span>
-        </li>
-        <li>
-          Blueberry Muffin <span class="price">$4.50</span>
-        </li>
-        <li>
-          Choco vanilla Muffin <span class="price">$3.50</span>
-        </li>
-        <li>
-          Nutella Muffin <span class="price">$5.50</span>
-        </li>
-        </ol>
-    </section>
+      <section>
+        <h2>Pastries</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Butter Croissant</td>
+              <td><span class="price">$3.00</span></td>
+            </tr>
+            <tr>
+              <td>Nuss Nougat Croissant</td>
+              <td><span class="price">$3.50</span></td>
+            </tr>
+            <tr>
+              <td>Blueberry Muffin</td>
+              <td><span class="price">$4.50</span></td>
+            </tr>
+            <tr>
+              <td>Choco vanilla Muffin</td>
+              <td><span class="price">$3.50</span></td>
+            </tr>
+            <tr>
+              <td>Nutella Muffin</td>
+              <td><span class="price">$5.50</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <section>
-      <h2>Seasonal</h2>
-      <ul>
-        <li>
-          Pumpkin Spice Cold Brew <span class="price">$6.25</span>
-        </li>
-        <li>
-          Chocolate Sea Salt Tart <span class="price">$6.00</span>
-        </li>
-      </ul>
-    </section>
-    <section>
-  <h2>Weekend specials</h2>
+      <section>
+        <h2>Seasonal</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pumpkin Spice Cold Brew</td>
+              <td><span class="price">$6.25</span></td>
+            </tr>
+            <tr>
+              <td>Chocolate Sea Salt Tart</td>
+              <td><span class="price">$6.00</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Weekend specials</h2>
 
-  <div class="card-row">
-    <article class="card">
-      <img src="images/weekend-special-1.jpg" alt="A customer-friendly view of our weekend special dish, served fresh and ready to enjoy.">
-      <h3>Weekend Special 1: Truffle Butter Cake</h3>
-      <p class="price">$12</p>
-    </article>
+        <div class="card-row">
+          <article class="card">
+            <img
+              src="images/weekend-special-1.jpg"
+              alt="A customer-friendly view of our weekend special dish, served fresh and ready to enjoy."
+            />
+            <h3>Weekend Special 1: Truffle Butter Cake</h3>
+            <p class="price">$12</p>
+          </article>
 
-    <article class="card">
-      <img src="images/weekend-special-2.jpg" alt="A close-up photo of our second weekend special, showing the finished dish with garnish.">
-      <h3>Weekend Special 2: Lemon Cinnamon Cheese Cake</h3>
-      <p class="price">$15</p>
-    </article>
+          <article class="card">
+            <img
+              src="images/weekend-special-2.jpg"
+              alt="A close-up photo of our second weekend special, showing the finished dish with garnish."
+            />
+            <h3>Weekend Special 2: Lemon Cinnamon Cheese Cake</h3>
+            <p class="price">$15</p>
+          </article>
 
-    <article class="card">
-      <img src="images/weekend-special-3.jpg" alt="A plated photo of the third weekend special, cooked to order and served warm.">
-      <h3>Weekend Special 3: Rainbow Pastry with Cream Cheese and Hint of Zitrone</h3>
-      <p class="price">$18</p>
-    </article>
-  </div>
-</section>
+          <article class="card">
+            <img
+              src="images/weekend-special-3.jpg"
+              alt="A plated photo of the third weekend special, cooked to order and served warm."
+            />
+            <h3>
+              Weekend Special 3: Rainbow Pastry with Cream Cheese and Hint of
+              Zitrone
+            </h3>
+            <p class="price">$18</p>
+          </article>
+        </div>
+      </section>
+      <section>
+        <h2>Opening hours</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Hours</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>11:00am – 8:00pm</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>11:00am – 8:00pm</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>11:00am – 8:00pm</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>11:00am – 8:00pm</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>11:00am – 10:00pm</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>10:00am – 10:00pm</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>Closed</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
       <section>
         <h2>Find us</h2>
         <p>Alexanderplatz 12, 121077, Berlin, Germany</p>
